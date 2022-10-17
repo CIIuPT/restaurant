@@ -1,0 +1,323 @@
+@font-face {
+	font-family: Fredericka;
+	src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+
+@font-face {
+	font-family: Gabelisa;
+	src: url(../fonts/Gabelisa.ttf);
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Thin.woff2') format('woff2'), url('../fonts/Montserrat-Thin.woff') format('woff');
+}
+
+
+:root
+{
+	--mainfont: Montserrat;
+	--fred: Fredericka;
+	--gabel: Gabelisa;
+	--maincolor: rgb(0, 0, 0);
+}
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html
+{
+	font-size: 0.694vw;
+}
+
+
+body
+{
+	font-family: var(--mainfont);
+	color: var(--maincolor);
+}
+
+
+.conteiner
+{
+	width: 144rem;
+}
+
+
+button
+{
+	height: 6rem;
+	width: 23rem;
+	cursor: pointer;
+	background-color: #ffe001;
+	font-size: 2rem;
+	font-weight: 900;
+	border: 1px solid #000;
+}
+
+
+/***************************Heder*********************************/
+
+.head
+{
+	width: 100%;
+	height: 82.5rem;
+	background-image: url(../img/Leaf.png), url(../img/Tomato.png), url(../img/Pasta.png), url(../img/food.png), url(../img/Leaf2.png), url(../img/Rectangle2.png), url("../img/Rectangle.png");
+	background-size: 9rem, 9rem, 9rem, 65%, 5rem, contain, 100%;
+	background-position: bottom 6rem right 3.5rem, bottom 5rem left 65rem, top 17.8rem left 55%, top 0rem right -6rem, top 21rem left 9.5rem, right,right;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+	position: relative;
+}
+
+
+.header-logo
+{
+	display: flex;
+	justify-content: space-between;
+	height: 16rem;
+}
+
+
+.logo
+{
+	align-items: center;
+	padding: 6.5rem 0 0 5.5rem;
+}
+
+
+.logo img
+{
+	width: 100%;
+	height: 70%;
+}
+
+
+.nav
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-top: 4.5rem;
+}
+
+
+.number
+{
+	display: flex;
+	text-align: end;
+	justify-content: end;
+	margin-right: 5.5rem;
+}
+
+
+.number p
+{
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: .4rem;
+}
+
+
+.number span
+{
+	font-size: 2.9rem;
+	font-weight: bold;
+}
+
+
+.number img
+{
+	margin-left: 1.5rem;
+	width: 2.9rem;
+	height: 5.3rem;
+}
+
+
+.menu
+{
+	margin-right: 5.5rem;
+}
+
+
+.menu ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+
+.menu li
+{
+	margin-left: 6rem;
+}
+
+
+.menu a
+{
+	text-decoration: none;
+	color: var(--maincolor);
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.zaglavn
+{
+	display: flexbox;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+	top: 22rem;
+	left: 10rem;
+}
+
+
+.zaglavn h2
+{
+	font-family: var(--gabel);
+	font-size: 5.7rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
+}
+
+
+.zaglavn h1
+{
+	font-family: var(--fred);
+	font-size: 9rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+.zaglavn #podch
+{
+	max-width: 80%;
+	display: inline-block;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+.summa
+{
+	font-family: var(--fred);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+
+.summa_text
+{
+	font-size: 1.9rem;
+}
+
+
+.summa_chisla
+{
+	font-size: 5.6rem;
+	padding-left: 1rem;
+}
+
+
+/* *******************Choose & Enjoy********************* */
+
+
+.choose 
+{
+	height: 90rem;
+	display: flex;
+	flex-direction: column;
+	padding-top: 9rem;
+	background-image: url(../img/Rectangle3.png);
+	background-repeat: no-repeat;
+	background-size: 100% 14rem;
+	background-position: top 54% left 0;
+}
+
+
+.choose_text 
+{
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+
+.choose_text h1
+{
+	font-family: var(--fred);
+	font-size: 5rem;
+	font-weight: 400;
+	margin-bottom: 3.5rem;
+}
+
+
+.choose_text p
+{
+	font-size: 1.6rem;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+
+.choose_cards 
+{
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.choose_card
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 33%;
+}
+
+
+.choose_card img
+{
+	width: 36rem;
+}
+
+
+.choose_card h5
+{
+	margin-top: 2rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.choose_card p
+{
+	font-size: 1.6rem;
+	text-align: center;
+	max-width: 80%;
+	margin: 2rem 0 3rem 0;
+}
+
+
+/* ***************Discover********************* */
