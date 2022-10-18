@@ -323,3 +323,24 @@ button
 /* ***************Discover********************* */
 
 
+.discover 
+{
+	height: 76rem;
+	text-align: center;
+}
+
+
+.discover_text h5
+{
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.discover_text h3
+{
+	font-size: 4.1rem;
+	text-transform: uppercase;
+	font-family: var(--fred);
+}
