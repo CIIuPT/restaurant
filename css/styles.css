@@ -343,4 +343,13 @@ button
 	font-size: 4.1rem;
 	text-transform: uppercase;
 	font-family: var(--fred);
+	font-weight: 400;
+}
+
+
+.discover_text p
+{
+	font-size: 1.6rem;
+	max-width: 80%;
+	margin: 1rem auto;
 }
