@@ -36,6 +36,7 @@
 html
 {
 	font-size: 0.694vw;
+	max-width: 100vw;
 }
 
 
@@ -43,6 +44,13 @@ body
 {
 	font-family: var(--mainfont);
 	color: var(--maincolor);
+}
+
+
+.wraper
+{
+	max-width: 144rem;
+	overflow: hidden;
 }
 
 
@@ -327,6 +335,14 @@ button
 {
 	height: 76rem;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.discover_text
+{
+	flex-grow: 1;
 }
 
 
@@ -355,9 +371,115 @@ button
 }
 
 
+.discover_flip
+{
+	display: flex;
+	/* align-self: stretch; */
+	flex-grow: 4;
+}
+
+
+.flip_cont input
+{
+	display: none;
+}
+
+
 .choice_cont
 {
 	display: flex;
-	flex: 1 1 auto;
-	/* border-bottom: 2px solid #000; */
+	justify-content: space-around;
+	align-items: center;
+	max-width: 100vw;
+	position: relative;
+}
+
+
+.choice_img img
+{
+	max-width: 100%;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+.choice_img
+{
+	max-width: 33%;
+	display: block;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+.choice_label
+{
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	margin-top: 7rem;
+}
+
+
+.choice_label label
+{
+	border: 1px solid #d6d6d6;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background-color: #d6d6d6;
+	cursor: pointer;
+	margin: 0 1rem;
+}
+
+
+.flip_cont
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#radio1:checked ~ .choice_cont .img1
+{
+	position: absolute;
+	transform: scale(130%);
+}
+
+
+#radio1:checked ~ .choice_label #btn1
+{
+	background-color: #ffe001;
+	border: 1px solid #d6d6d6;
+}
+
+
+#radio2:checked ~ .choice_cont .img2
+{
+	position: absolute;
+	transform: scale(130%);
+}
+
+
+#radio2:checked ~ .choice_label #btn2
+{
+	background-color: #ffe001;
+	border: 1px solid #d6d6d6;
+}
+
+
+#radio3:checked ~ .choice_cont .img3
+{
+	position: absolute;
+	transform: scale(130%);
+}
+
+
+#radio3:checked ~ .choice_label #btn3
+{
+	background-color: #ffe001;
+	border: 1px solid #d6d6d6;
 }
