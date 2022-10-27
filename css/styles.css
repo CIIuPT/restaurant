@@ -353,3 +353,11 @@ button
 	max-width: 80%;
 	margin: 1rem auto;
 }
+
+
+.choice_cont
+{
+	display: flex;
+	flex: 1 1 auto;
+	/* border-bottom: 2px solid #000; */
+}
