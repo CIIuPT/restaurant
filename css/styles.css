@@ -408,6 +408,7 @@ button
 .choice_img
 {
 	max-width: 50%;
+	position: relative;
 	display: block;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -445,6 +446,36 @@ button
 }
 
 
+.img1::after, .img2::after, .img3::after
+{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.541);
+}
+
+
+#radio1:checked ~ .choice_cont .img1::after
+{
+	display: none;
+}
+
+
+#radio2:checked ~ .choice_cont .img2::after
+{
+	display: none;
+}
+
+
+#radio3:checked ~ .choice_cont .img3::after
+{
+	display: none;
+}
+
+
 #radio1:checked ~ .choice_cont .img1
 {
 	position: absolute;
@@ -454,6 +485,7 @@ button
 	left: 35.5rem;
 	display: block;
 	transform: scale(140%);
+	z-index: 10;
 }
 
 
@@ -473,6 +505,7 @@ button
 	left: 35.5rem;
 	display: block;
 	transform: scale(140%);
+	z-index: 10;
 }
 
 
@@ -492,6 +525,7 @@ button
 	left: 35.5rem;
 	display: block;
 	transform: scale(140%);
+	z-index: 10;
 }
 
 
