@@ -73,6 +73,12 @@ button
 }
 
 
+button:hover
+{
+	background-color: rgba(0, 0, 0, 0.205);
+}
+
+
 /***************************Heder*********************************/
 
 .head
@@ -334,7 +340,7 @@ button
 
 .discover 
 {
-	height: 76rem;
+	height: 75rem;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -534,3 +540,106 @@ button
 	background-color: #ffe001;
 	border: 1px solid #d6d6d6;
 }
+
+
+/* ***************Try it********************** */
+
+
+.try_it
+{
+	height: 54rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	margin-top: -5rem;
+}
+
+
+.big_img
+{
+	height: 41.7rem;
+	width: 60rem;
+	background-image: url(../img/Image31.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.smoll_img
+{
+	display: flex;
+	flex-direction: column;
+	gap: 3.5rem;
+}
+
+
+.item_img
+{
+	height: 19rem;
+	width: 59.5rem;
+}
+
+
+.item_img1
+{
+	background-image: url(../img/Image32.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.item_img2
+{
+	background-image: url(../img/Image33.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.try
+{
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-family: var(--mainfont);
+	text-transform: uppercase;
+	padding: 2rem 0 1rem 3.5rem;
+}
+
+
+.big_text
+{
+	color: #fff;
+	font-family: var(--mainfont);
+	font-size: 4.15rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 0 1rem 3.5rem;
+}
+
+
+.text_duo
+{
+	color: #fff;
+	font-size: 3.3rem;
+	font-family: var(--mainfont);
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0 0 1rem 3.5rem;
+}
+
+
+.try_it a
+{
+	text-decoration: none;
+}
+
+
+.try_it a:hover
+{
+	opacity: 0.8;
+}
+
+
+/* ****************************************** */
